@@ -1,9 +1,9 @@
 pipeline
 {
-agent any     //agent
-    //{
-        //label 'Master'
-        //}
+agent
+    {
+        label 'none'
+    }
 
     tools
     {
@@ -43,16 +43,16 @@ agent any     //agent
                 sh 'mvn -s settings.xml clean deploy'
             }
         }
-        //stage('deployment')
-        //{
-         //   agent
-          //  {
-           //     label 'Ansible'
-            //}
-            //steps
-           // {
-            //    sh 'ansible-playbook -i inventory deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
-            //}
-        //}
+        stage('deployment')
+        {
+            agent
+            {
+                label 'Ansible'
+            }
+            steps
+            {
+                sh 'ansible-playbook -i inventory deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'
+            }
+        }
     }
 }
