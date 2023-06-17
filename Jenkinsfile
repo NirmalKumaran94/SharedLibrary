@@ -1,6 +1,6 @@
 pipeline
 {
-ageny any     //agent
+agent any     //agent
     //{
         //label 'Master'
         //}
