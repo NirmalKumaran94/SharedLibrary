@@ -2,7 +2,7 @@ pipeline
 {
 agent
     {
-        label 'none'
+        label 'Master'
     }
 
     tools
