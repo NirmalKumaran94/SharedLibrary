@@ -1,9 +1,9 @@
 pipeline
 {
-     agent
-    {
-        label 'Master'
-        }
+ageny any     //agent
+    //{
+        //label 'Master'
+        //}
 
     tools
     {
