@@ -2,7 +2,7 @@ pipeline
 {
 agent
     {
-        label 'Master'
+        label 'Jenkins_Slave'
     }
 
     tools
