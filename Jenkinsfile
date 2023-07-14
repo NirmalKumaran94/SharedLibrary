@@ -18,6 +18,12 @@ pipeline {
                 mavenBuild()
             } 
         }
+        stage ('')
+        {
+            steps {
+            nexusUpload()
+        }
+    }
         stage ('Clean_WorkSpace')   {
             steps {
                 cleanWS()
