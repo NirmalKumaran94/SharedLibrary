@@ -1,7 +1,7 @@
 @Library('shared-library') _
 pipeline {
     agent (
-        label ('GIT')
+        label 'GIT'
         }
     tools
     {
