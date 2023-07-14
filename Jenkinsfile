@@ -18,7 +18,7 @@ pipeline {
                 mavenBuild()
             } 
         }
-        stage ('')
+        stage ('Nexus Upload')
         {
             steps {
             nexusUpload()
