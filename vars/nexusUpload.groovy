@@ -1,4 +1,4 @@
 def call()
 {
-sh ('mvn -s settings.xml clean deploy')
+sh 'mvn -s settings.xml clean deploy'
 }
