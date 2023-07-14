@@ -1,5 +1,8 @@
 @Library('shared-library') _
 pipeline {
+    agent (
+        label ('GIT')
+        }
     tools
     {
         maven ('maven_3.9.0')
@@ -12,9 +15,6 @@ pipeline {
         }
         stage ('Maven_Build')   {
             steps {
-                agent {
-        label 'GIT'
-    }
                 mavenBuild()
             } 
         }
