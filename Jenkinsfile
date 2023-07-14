@@ -1,6 +1,6 @@
 @Library('shared-library') _
 pipeline {
-    agent (
+    agent {
         label 'GIT'
         }
     tools
